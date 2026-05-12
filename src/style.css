@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --light-grey: #dedbd2;
+    --red: #d00000;
+    --red2: #ae2012;
+    --blacktext: #22223b;
+    --lightblue: #8eecf5;
+    --orange: #ee9b00;
+    --yellow: #ffd60a;
+    --blue: #4ea8de;
+
+}
+
+
+body{
+    font-family: "Roboto Mono", monospace;
+    background-color: var(--light-grey);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--red);
+}
