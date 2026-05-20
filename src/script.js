@@ -21,19 +21,19 @@ function navTo(id){
 const cards = document.querySelectorAll('#s2, .card')
 
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entries) => {
-        if(entries.isIntersecting){
+    entries.forEach((entry) => {
+        if(entry.isIntersecting){
             cards.forEach((card, index) => {
-                setTimeout{() => {
+                setTimeout(() => {
                     card.classList.add('visible');
                 }, index * 500);
             });
         }else{
             cards.forEach((card) => {
-                card.classList.remove('visible')
+                card.classList.remove('visible');
             })
         }
     });
-}, {threshold: 0.2})
+}, { threshold: 0.2 });
 
-observer.observe(document.querySelector('#s2'))
+observer.observe(document.querySelector('#s2'));
